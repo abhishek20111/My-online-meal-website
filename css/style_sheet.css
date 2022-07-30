@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* css varable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navbar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+/* pseudo selector */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+/* logo & images */
+#logo{
+    margin:30px 34px;
+
+}
+#logo img{
+    width: auto;
+    height: 53px;
+    margin: -1px -20px;
+    border-radius: 80px;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+
+/* home secton */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 590px;
+    /* justify-content: center; */
+    align-items: center;
+}
+#home::before{ /*use pseudo selector for background */
+    content: "";
+    position: absolute;
+    /* background: url("../logo.jfif");  // for coming out of any folder use ../ */
+    background: url("https://www.oktalite.com/fileadmin/referenzen/food/fresh-food-market-kairo-aegypten/food-fresh-food-market-kairo-eingang-fano-oktalite-10-slider.jpg");
+    /* background : url("https://cdn.pixabay.com/photo/2016/03/02/20/13/grocery-1232944_960_720.jpg"); */
+    background-repeat: no-repeat;
+    
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 175%;
+    background-size: auto 710px;
+    z-index: -3;
+    opacity: 0.9;
+
+}
+
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    /* color: rgb(203, 240, 255); */
+
+    color: white;
+}
+.h-primary_centre{
+     font-size: 2.4rem;
+     text-align: center;
+     margin: 30px;
+}
+#home p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: aqua; */
+    /* color: rgb(255, 48, 196); */
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    padding: 20px;
+    width:70%;  
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(154, 107, 107);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;  
+    /* margin: 20px;  */
+}
+.centre{
+    text-align: center;
+}
+
+/* Services */
+
+#services{
+    margin: 43px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 10px;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 9px;
+    background-color: rgb(236, 207, 221);
+}
+#services .box img{
+    /* border: 2px solid red; */
+    height: 123px;
+    display: block;
+    margin: 12px auto ;
+    border-radius: 5px;
+    
+}
+#services .h-secondary-centre{
+    text-align: center;
+    
+}
+#services p{
+    padding: 10px ;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* client */
+.client-section{
+    height: 344px;
+}
+.client-item{
+    padding: 50px 60px;
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    /* height: 100%; */
+    background: url("https://2675296.fs1.hubspotusercontent-na1.net/hub/2675296/hubfs/iStock-873397538.jpg?width=520&height=345&name=iStock-873397538.jpg");
+    width: 100%;
+    top: auto;
+    background-repeat: no-repeat;
+    /* background-position: 40%; */
+    background: position y 2px;px ;
+    background-size: auto 985px;
+    left: 20px;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.6;
+    
+    
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 90px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+    
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url("https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg") no-repeat;
+    background-size:cover;
+
+
+}
+#contact-box{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* #btn11{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin: auto 12px;
+
+} */
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    font-family: 'Baloo 2', cursive;
+    margin: 12px 0px;
+    border-radius: 12px;
+    box-shadow: 2px 3px;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding-bottom: 9px 20px;
+    position: relative;
+}
